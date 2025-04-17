@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/gt.css">
+    </head>
+
+    <body>
+        <h1 id="myHeader">Senior League. Div A-06/9-2024 </h1>
+        <img src = "pics/seniors.jpg" width="400"
+             alt = "Senior League 2020" />
+
+		<div id="competitorsSection">
+            <h2>Competitors</h2>
+        </div>
+
+        <div id="matchesSection"></div>
+
+        <div id="finalScoresSection">
+            <h2>Final Results</h2>
+        </div>
+        <div id="teamScoresSection">
+            <h2>Team Competition</h2>
+        </div>
+
+
+		<script src="./app/constants.js"></script>
+
+		<script src="app/models/players/LoveTriangle.js"></script>
+		<script src="./app/models/players/BORODIN.js"></script>
+		<script src="./app/models/players/Winx.js"></script>
+		<script src="./app/models/players/Boy.js"></script>
+		<script src="./app/models/players/Coronaviridae.js"></script>
+		<script src="./app/models/players/teamArbuz.js"></script>
+		<script src="./app/models/players/myDreamTeam.js"></script>
+		<script src="./app/models/players/Kikoriki.js"></script>
+        <script src="./app/models/teamBlues.js"></script>
+        <script src="./app/models/teamFriends.js"></script>
+		<script src="./app/models/teamTropic.js"></script>
+		<script src="./app/models/Best_of_VT.js"></script>
+		<script src="./app/models/bangladesh.js"></script>
+        <script src="app/models/players/LoveTriangle.js"></script>
+
+
+		<script src="./app/models/game.js"></script>
+        <script src="./app/models/game_rules.js"></script>
+        <script src="./app/models/tournament.js"></script>
+        <script src="./app/games/arena.js"></script>
+        <script src="./app/launch.js"></script>
+
+		<script>
+			document.getElementById("myHeader").innerHTML = gttournament.name;
+
+			/* setting our players */
+			invitePlayers();
+			presentTeams()
+		</script>
+
+        <button onclick="performNextRound()">Run Tournament</button>
+    </body>
+</html>
